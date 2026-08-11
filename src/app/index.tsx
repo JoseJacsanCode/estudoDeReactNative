@@ -25,7 +25,10 @@ export default function Index() {
                     <Text style={globalStyles.subtitle}>Acesse sua conta com e-mail e senha.</Text>
 
                     <View style={globalStyles.form}>
-                        <Input placeholder="E-mail" keyboardType="email-address"/>
+                        <Input placeholder="E-mail" keyboardType="email-address"
+                        onChangeText={console.log}
+                        />
+
                         <Input placeholder="Senha" secureTextEntry/>
                         <Button label="Entrar" onPress={handleSignIn}/>
                     </View>
